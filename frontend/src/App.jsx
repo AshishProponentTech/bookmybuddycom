@@ -1,9 +1,9 @@
-import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './Pages/Home'
+import Home from "./Pages/Home.jsx";
 import Dashboard from './Pages/Dashboard'
-import Signin from './Pages/Signin'
+import SignIn from './Pages/SignIn'
 import Header from './Components/Header'
+import Footer from './Components/Footer';
 
 export default function App() {
   return (
@@ -12,8 +12,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/signin" element={<Signin />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }
